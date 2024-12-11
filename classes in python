@@ -1,0 +1,105 @@
+#Create a class Person with attributes name, age, and city.¶
+class person:#class
+    def __init__(self,name,age,city):#construction
+      self.name=name
+      self.age=age
+      self.city=city
+    def person(self):
+        print(f"{self.name}learn!")
+
+person_one = person("noorulain", 19 ,"raiwind")
+print(person_one.name)
+person_one.person()
+#Create a class Car with attributes make, model, and year.¶
+class car:#object
+    def __init__(self,make,model,year):#construction
+     self.make=make
+     self.model=model
+     self.year=year
+    def car(self):
+       print(f"{self.make}calus!")
+
+car1=car("BMW","pro",2020)
+print(car1.make)
+car1.car()
+#Create a class Circle with attributes radius and methods to calculate area and circumference.
+class circle:
+    def __init__(self,radius,area,circumference):
+        self.radius=radius
+        self.area=area
+        self.circumference=circumference
+    def area(self):
+        return 3.14 *r**2
+    def circumference(self):    
+        return 2*3.14*r
+n=float(input("enter radiuse of the circle:"))
+n1=3.14*n**2
+n2=2*3.14*n
+circle1=circle(n,n1,n2)
+print("the area of circle is:",circle1.area)
+print("the circumference of circle is:", circle1.circumference)
+#Create a class Rectangle with attributes length and width and methods to calculate area and perimeter.
+class rectangle:
+    def __init__(self, length,width):
+        self.length=length
+        self.width=width
+    def area(self):
+        return length*width
+    def perimeter(self):
+        return 2*length+2*width
+l=float(input("enter length of a rectangle"))
+w=float(input("enter width of a rectangular"))
+area=l*w
+perimeter=2*l+2*w
+rectangle1=rectangle(l,w)
+print("the area of rectangle is:",area)
+print("the perimeter of rectangle is:",perimeter)
+#Create a class Student with attributes name, roll_number, and marks. Implement a method to calculate the average marks.
+class student:
+    def __init__(self ,name, roll_number,marks):
+        self.name=name
+        self.roll_number=roll_number
+        self.marks=marks
+    def average(self):
+        len_sub=3
+        return total_marks/3
+name=input("enter your name here:")
+roll_number=int(input("enter your roll no here:"))
+total_marks=int(input("enter your total marks here:"))
+average=total_marks/3
+student1=student(name,roll_number,total_marks)
+print("the average of your number is",average)
+class book:
+    def __init__(self,title,author,published_year):
+        self.title=title
+        self.author=author
+        self.published_year=published_year
+my_book=book("namal","nimra",2019)    
+print("title of book is:",my_book.title)
+print("author of book is:",my_book.author)
+print("publish year:",my_book.published_year)
+#7. Create a class Employee with attributes name, salary, and designation.
+class employee:
+    def __init__(self,name, salary,designation):
+        self.name=name
+        self.salary=salary
+        self.designation=designation
+classic_employee=employee("hania",18270,"manager")        
+print("name of employee:",classic_employee.name)
+print("salary:",classic_employee.salary)
+print("deignation of employee",classic_employee.designation)
+# Create a class Bank with attributes name, account_number, and balance. Implement methods to deposit and withdraw money.
+total=12
+class bank:
+    def __init__(self,name, account_number,balance):
+        self.name=name
+        self.account_number=account_number
+        self.balance=balance
+    def deposit_or__withdrew(self):
+        if self.balance>total:
+            print("deposited")
+        else :
+            self.balance<total
+            print("not deposited")
+a=bank('noor',45566,20)
+a.deposit_or__withdrew()
